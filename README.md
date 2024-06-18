@@ -6,6 +6,7 @@ This is just a small personal project to generate an important quantity of QRs f
 
 ### Before starting
 1. Recommended using virtual enviroment
+
     Creation:
     ``` bash
     # Windows
@@ -27,7 +28,7 @@ This is just a small personal project to generate an important quantity of QRs f
     source venv/bin/activate
     ```
 
-2. Install dependencies
+3. Install dependencies
     ```bash
     pip install -r requirements.txt
     ```
