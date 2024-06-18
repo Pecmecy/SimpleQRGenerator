@@ -36,7 +36,9 @@ class QRApp(customtkinter.CTk):
         self.l3 = customtkinter.CTkLabel(self, textvariable=self.message)
         self.l3.grid(row=6, column=0, padx=20, pady=0, sticky="ew")
         self.message.set("Please select an Excel file and a folder to generate the QR Codes")
-        
+
+        self.button4 = customtkinter.CTkButton(self, text="Exit", command=self.destroy)
+        self.button4.grid(row=7, column=0, padx=20, pady=50, sticky="ew")        
         self.grid_columnconfigure(0, weight=1)
 
     def button_callback(self):
