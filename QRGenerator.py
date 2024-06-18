@@ -4,11 +4,6 @@ from qrcode import QRCode
 import pandas as pd
 from dotenv import load_dotenv
 
-# onlyfiles = [f for f in listdir("C:/Users/eldom/Desktop/CodigoCosas/QRReader/QRs") if isfile(join("C:/Users/eldom/Desktop/CodigoCosas/QRReader/QRs", f))]
-# print(onlyfiles)
-
-
-
 def generateQRs(excelData):
     for i in range(len(excelData)):
         qr = QRCode(version=1, box_size=10, border=5)
