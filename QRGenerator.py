@@ -4,15 +4,14 @@ from qrcode import QRCode
 import pandas as pd
 from dotenv import load_dotenv
 
-def generateQRs(excelData):
+def generateQRs(excelData, saveFolder):
     for i in range(len(excelData)):
         qr = QRCode(version=1, box_size=10, border=5)
         data = excelData["URL"][i]
         qr.add_data(data)
         qr.make(fit=True)
         img = qr.make_image(fill='black', back_color='white')
-        savePath = os.environ["SAVE_PATH"]
-        img.save(f"{savePath}/{excelData['NAME'][i]}.png")
+        img.save(f"{saveFolder}/{excelData['NAME'][i]}.png")
 
 def readExcel(excelPath):
     excelData = pd.read_excel(excelPath)
