@@ -63,8 +63,8 @@ class QRApp(customtkinter.CTk):
             self.message.set("Generating QR Codes...")
             self.l3.configure(text_color="blue")
             excelData = readExcel(self.fileName)
-            generateQRs(excelData, self.folderName)
-            self.message.set("QR Codes generated successfully!")
+            totalQRs = generateQRs(excelData, self.folderName)
+            self.message.set(f"{totalQRs} QR Codes generated successfully!")
             self.l3.configure(text_color="green")
         
         else:
