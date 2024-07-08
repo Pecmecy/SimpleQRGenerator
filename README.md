@@ -13,19 +13,19 @@ This is just a small personal project to generate an important quantity of QRs f
     py -m venv .venv
     
     #Linux/macOS
-    python -m venv .venv
+    python3 -m venv .venv
     ```
 
     Use:
     ``` bash
     # Linux
-    source venv/bin/activate
+    source .venv/bin/activate
 
     # Windows (no powershell)
     .\venv\Scripts\activate
 
     # macOS
-    source venv/bin/activate
+    source .venv/bin/activate
     ```
 
 3. Install dependencies
